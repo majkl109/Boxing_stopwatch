@@ -32,14 +32,14 @@ public class StopwatchActivity extends AppCompatActivity {
         savedInstanceState.putBoolean("wasRunning", wasRunning);
     }
     @Override
-    protected void onStop(){
-        super.onStop();
+    protected void onPause(){
+        super.onPause();
         wasRunning = running;
         running = false;
     }
     @Override
-    protected void onStart(){
-        super.onStart();
+    protected void onResume(){
+        super.onResume();
         if(wasRunning){
             running = true;
         }
