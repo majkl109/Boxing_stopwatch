@@ -12,7 +12,9 @@ public class Workout {
          new Workout("Core Agony","100 Pull-ups\n100 Push-ups\n100" +
                  "Sit-ups\n100 Squats"),
          new Workout("The Wimp Special","5 Pull-ups\n15 Squats"),
-
+         new Workout("Strenght and Lenght",
+                 "500 meter run\n21 x 1.5 pood kettleball swing\n21 x pull-ups")
+    };
 
 
     public Workout(String name, String description) {
