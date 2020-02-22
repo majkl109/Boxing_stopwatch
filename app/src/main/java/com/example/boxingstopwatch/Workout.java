@@ -11,6 +11,8 @@ public class Workout {
                              "1-legged squats\n15 Pull-ups"),
          new Workout("Core Agony","100 Pull-ups\n100 Push-ups\n100" +
                  "Sit-ups\n100 Squats"),
+         new Workout("The Wimp Special","5 Pull-ups\n15 Squats"),
+
 
 
     public Workout(String name, String description) {
