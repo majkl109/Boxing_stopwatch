@@ -1,6 +1,9 @@
 package com.example.boxingstopwatch;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+
 import android.os.Handler;
 import android.view.View;
 import android.os.Bundle;
@@ -23,6 +26,12 @@ public class StopwatchActivity extends AppCompatActivity {
             wasRunning = savedInstanceState.getBoolean("wasRunning");
         }
         runTimer();
+
+        WorkoutDetailFragment workoutDetailFragment = new WorkoutDetailFragment();
+        FragmentManager manager = getSupportFragmentManager();
+        manager.beginTransaction()
+                .replace(R.id.workout_detail, workoutDetailFragment, workoutDetailFragment.getTag())
+                .commit();
     }
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
