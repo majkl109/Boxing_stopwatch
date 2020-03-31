@@ -9,14 +9,12 @@ import androidx.fragment.app.Fragment;
 
 public class WorkoutDetailFragment extends Fragment {
 
-    public WorkoutDetailFragment(){
-
-    }
+    private long workoutId;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState){
 
-        return inflater.inflate(R.layout.activity_detail, container,false);
+        return inflater.inflate(R.layout.fragment_workout_detail, container,false);
     }
 }
