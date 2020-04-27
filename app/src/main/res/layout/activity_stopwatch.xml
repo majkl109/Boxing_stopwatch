@@ -49,5 +49,9 @@
         android:onClick="onClickReset"
         android:text="@string/reset" />
 
+    <fragment
+        android:name="com.example.boxingstopwatch.WorkoutListFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
