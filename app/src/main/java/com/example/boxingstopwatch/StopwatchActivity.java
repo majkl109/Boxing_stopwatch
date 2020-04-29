@@ -11,7 +11,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 import java.util.Locale;
 
-public class StopwatchActivity extends AppCompatActivity {
+public class StopwatchActivity extends AppCompatActivity implements WorkoutListFragment.Listener{
 
     private int seconds = 0;
     private boolean running;
@@ -89,9 +89,12 @@ public class StopwatchActivity extends AppCompatActivity {
         });
     }
 
-    public void onShowDetails(View view) {
+    @Override
+    public void itemClicked(long id) {
         Intent intent = new Intent(this, DetailActivity.class);
-        startActivity(intent);
+            intent.putExtra(DetailActivity.EXTRA_WORKOUT_ID, (int)id);
+            startActivity(intent);
+
 
     }
 }
