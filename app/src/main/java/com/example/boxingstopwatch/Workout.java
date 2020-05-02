@@ -31,5 +31,9 @@ public class Workout {
         return description;
     }
 
+    public String toString(){
+        return this.name;
+    }
+
 
 }
